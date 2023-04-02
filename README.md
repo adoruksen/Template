@@ -17,6 +17,7 @@
     - Camera Movement
     - Fight Mechanic (Sword & Gun)
     - Portal Mechanic
+    - IK ( riding bicycle )
     
 ------------------------------------------------------------
 
