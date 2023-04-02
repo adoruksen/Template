@@ -12,7 +12,7 @@
 
 
 #  Project contains the following mechanics.
-    - Joystick Movement
+    - Joystick Movement (New Input System)
     - Stacking
     - Camera Movement
     - Fight Mechanic (Sword & Gun)
@@ -24,3 +24,4 @@
     - Odin Inspector
     - DoTween
     - Joystick
+    - New UI System
