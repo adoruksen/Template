@@ -1,3 +1,7 @@
+![resized](https://user-images.githubusercontent.com/73473236/229547487-ca978785-9466-408d-bf23-f0fb0131a91f.png)
+
+
+
 #  Design patterns used in this project;
     - State Pattern
     - Observer Pattern
