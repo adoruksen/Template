@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 3dc6d0dd9260dc14cb2a0da88fa4208c
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Rowdies
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 99237b62543717c4b8f767ecf37ca396, type: 3}
+  - {fileID: 12800000, guid: c12474676818b9d4ab37250fa4ca38f7, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

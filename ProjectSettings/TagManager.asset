@@ -3,19 +3,21 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Character
+  - Bicycle
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - RockTree
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Ground
+  - Character
+  - Interactable
+  - Interactor
+  - Bicycle
   - 
   - 
   - 
