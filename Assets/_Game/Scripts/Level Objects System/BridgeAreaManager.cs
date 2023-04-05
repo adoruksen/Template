@@ -9,9 +9,13 @@ namespace LevelObjectsSystem
     {
         public override void OnCharacterEntered(CharacterController character)
         {
-            if (!GameManager.instance.IsPlaying) return;
-
+            character.Area.CurrentArea = this;
             character.SetState(character.GameState);
+        }
+
+        public override void OnCharacterExited(CharacterController character)
+        {
+            character.Area.PrevArea = this;
         }
     }
 }

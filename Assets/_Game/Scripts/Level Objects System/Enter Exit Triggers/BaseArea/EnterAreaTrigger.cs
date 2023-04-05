@@ -6,26 +6,43 @@ namespace Character
 {
     public class EnterAreaTrigger : MonoBehaviour,IBeginInteract
     {
-        private GameAreaManager _newArea;
+        private GameAreaManager _thisArea;
+        [SerializeField] private GameAreaManager _prevArea;
 
         public bool IsInteractable { get; } = true;
 
         
         private void Awake()
         {
-            _newArea = GetComponentInParent<GameAreaManager>();
+            _thisArea = GetComponentInParent<GameAreaManager>();
+        }
+
+        private void Start()
+        {
+            _prevArea = _thisArea.PreviousArea;
         }
 
         public void OnInteractBegin(IInteractor interactor)
         {
             var controller = (CharacterController)interactor;
-            controller.Movement.Bounds = _newArea.PlayArea;
-            EnterGameArea(controller);
+
+            if(controller.Area.CurrentArea == _prevArea)
+            {
+                controller.Movement.Bounds = _thisArea.PlayArea;
+                EnterGameArea(_thisArea,controller);
+            }
+            else
+            {
+                controller.Movement.Bounds = _prevArea.PlayArea;
+                EnterGameArea(_prevArea, controller);
+            }
+            
         }
 
-        private void EnterGameArea(CharacterController controller)
+        private void EnterGameArea(GameAreaManager area,CharacterController controller)
         {
-            _newArea.OnCharacterEntered(controller);
+            controller.Area.CurrentArea.OnCharacterExited(controller);
+            area.OnCharacterEntered(controller);
         }
     }
 }

@@ -7,6 +7,8 @@ namespace LevelObjectsSystem
     {
         [SerializeField] private Transform _nextAreaPlacer;
 
+        public GameAreaManager PreviousArea { get; set; }
+
         public Bounds PlayArea => _playArea;
         [SerializeField] private Bounds _playArea;
 

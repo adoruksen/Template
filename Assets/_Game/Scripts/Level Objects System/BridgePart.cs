@@ -14,6 +14,7 @@ namespace LevelObjectsSystem
             var manager = Object.Instantiate(_manager, parent);
             if (previousArea != null)
             {
+                manager.PreviousArea = previousArea;
                 var position = previousArea.GetNextAreaPosition();
                 manager.MoveArea(position);
             }

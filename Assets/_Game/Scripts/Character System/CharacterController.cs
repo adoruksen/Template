@@ -19,12 +19,14 @@ namespace Character
 
         public Rigidbody Rigidbody { get; private set; }
         public CharacterMovement Movement { get; private set; }
+        public CharacterArea Area { get; private set; }
         public Interactor Interactor { get; private set; }
 
         private void Awake()
         {
             Rigidbody = GetComponent<Rigidbody>();
             Movement = GetComponent<CharacterMovement>();
+            Area = GetComponent<CharacterArea>();
             Interactor = GetComponentInChildren<Interactor>();
             SetState(IdleState);
         }
