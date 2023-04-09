@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 3000809827678892836, guid: 271415dffcaefc84ea6bffb5e406ac5c,
         type: 3}
       propertyPath: m_Name
-      value: Character
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 3000809827678892838, guid: 271415dffcaefc84ea6bffb5e406ac5c,
         type: 3}
@@ -66,6 +66,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5332958330846860943, guid: 271415dffcaefc84ea6bffb5e406ac5c,
+        type: 3}
+      propertyPath: GameState
+      value: 1691417426440224780
+      objectReference: {fileID: 0}
+    - target: {fileID: 5332958330846860943, guid: 271415dffcaefc84ea6bffb5e406ac5c,
+        type: 3}
+      propertyPath: StackState
+      value: 1691417426440224781
+      objectReference: {fileID: 0}
+    - target: {fileID: 5332958330846860943, guid: 271415dffcaefc84ea6bffb5e406ac5c,
+        type: 3}
+      propertyPath: managedReferences[1691417426440224780]
+      value: Assembly-CSharp Character.StateMachine.Player.PlayerGameState
+      objectReference: {fileID: 0}
+    - target: {fileID: 5332958330846860943, guid: 271415dffcaefc84ea6bffb5e406ac5c,
+        type: 3}
+      propertyPath: managedReferences[1691417426440224781]
+      value: Assembly-CSharp Character.StateMachine.PlayerStackState
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 271415dffcaefc84ea6bffb5e406ac5c, type: 3}

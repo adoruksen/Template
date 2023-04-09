@@ -1,9 +1,8 @@
 
 namespace Character.StateMachine
 {
-    public class BicycleState : State
+    public class EnterVehicleState : State
     {
-        
     }
 }
 
