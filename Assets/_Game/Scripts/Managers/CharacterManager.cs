@@ -40,7 +40,7 @@ namespace Managers
         public void SpawnCharacters(Vector3 playerPosition, Vector3 aiPosition)
         {
             SpawnPlayer(playerPosition);
-            SpawnAi(aiPosition);
+            //SpawnAi(aiPosition);
             OnCharacterSpawned?.Invoke();
         }
 
@@ -61,7 +61,7 @@ namespace Managers
             foreach (var characterController in _characters)
             {
                 if (characterController.GameState == null) continue;
-                characterController.SetState(characterController.GameState);
+                characterController.SetState(characterController.StackState);
             }
         }
 

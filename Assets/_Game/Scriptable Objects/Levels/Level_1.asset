@@ -14,27 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Parts:
   - rid: 1691417426440224771
-  - rid: 1691417325662371847
-  - rid: 1691417325662371848
-  - rid: 1691417325662371849
   references:
     version: 2
     RefIds:
-    - rid: 1691417325662371847
-      type: {class: BasePart, ns: LevelObjectsSystem, asm: Assembly-CSharp}
-      data:
-        _manager: {fileID: 3494457466031146118, guid: 8e3fd546cadbe4c44a2a18cb039e1342,
-          type: 3}
-    - rid: 1691417325662371848
-      type: {class: BridgePart, ns: LevelObjectsSystem, asm: Assembly-CSharp}
-      data:
-        _manager: {fileID: 360570058373992003, guid: 170195284c3032544b60341391d313c7,
-          type: 3}
-    - rid: 1691417325662371849
-      type: {class: BasePart, ns: LevelObjectsSystem, asm: Assembly-CSharp}
-      data:
-        _manager: {fileID: 3494457466031146118, guid: 8e3fd546cadbe4c44a2a18cb039e1342,
-          type: 3}
     - rid: 1691417426440224771
       type: {class: StackPart, ns: LevelObjectsSystem, asm: Assembly-CSharp}
       data:
